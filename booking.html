@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyRentDav - Book Now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EasyRentDav Car Rental</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cars.html">Available Cars</a>
+            <a href="booking.html">Book Now</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Book Your Car</h2>
+        <form action="mailto:yourdadsemail@example.com" method="post" enctype="text/plain">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="car">Choose Car:</label>
+            <select id="car" name="car" required>
+                <option value="Toyota Corolla">Toyota Corolla</option>
+                <option value="BMW X5">BMW X5</option>
+                <option value="Mercedes C-Class">Mercedes C-Class</option>
+            </select>
+
+            <label for="dates">Rental Dates:</label>
+            <input type="text" id="dates" name="dates" placeholder="e.g., 20 Aug - 23 Aug" required>
+
+            <button type="submit">Send Booking</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EasyRentDav. All rights reserved.</p>
+    </footer>
+</body>
+</html>
